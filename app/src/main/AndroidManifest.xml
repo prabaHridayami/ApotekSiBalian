@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.">
-        <activity android:name=".MedicineActivity.EditMedicineActivity"></activity>
+        <activity android:name=".SettingActivity.SettingActivity"></activity>
+        <activity android:name=".MedicineActivity.EditMedicineActivity" />
         <activity
             android:name=".MedicineActivity.AddMedicineActivity"
             android:theme="@style/Widget.AppCompat.ActionBar" />
