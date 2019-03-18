@@ -6,8 +6,11 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="transGreen">#993EB47D</color>
+    <color name="orderGreen">#563EB47D</color>
     <color name="lightGreen">#2FD387</color>
     <color name="darkGreen">#166340</color>
+    <color name="red">#E92626</color>
+
 
 
 </resources>
