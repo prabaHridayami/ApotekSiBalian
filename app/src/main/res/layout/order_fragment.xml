@@ -4,8 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#fff">
+
+    </android.support.design.widget.TabLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_order"
+        android:layout_below="@+id/tabLayout_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
