@@ -11,7 +11,7 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="?android:attr/windowBackground"
         android:orientation="horizontal"
         android:elevation="10dp">
 
@@ -21,7 +21,7 @@
             android:text="Medicine"
             android:textSize="20sp"
             android:layout_gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimary"
             android:layout_marginLeft="15dp"/>
 
     </LinearLayout>
@@ -31,80 +31,88 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight = "1"
-        android:background="@color/white"
+        android:background="?android:attr/windowBackground"
         android:layout_below="@+id/header">
     </android.support.v4.view.ViewPager>
 
-    <LinearLayout
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:background="@color/colorPrimary"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
 
-        <LinearLayout
-            android:id="@+id/frg_medicine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:layout_marginRight="32dp">
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/ic_medicine"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Medicine"
-                android:textColor="@color/white"
-                android:layout_gravity="center"/>
-        </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?actionBarSize"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_horizontal">-->
 
-        <LinearLayout
-            android:id="@+id/frg_order"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp">
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/ic_order"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Order"
-                android:textColor="@color/white"
-                android:layout_gravity="center"/>
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/frg_medicine"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginRight="32dp">-->
+            <!--<ImageView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/ic_medicine"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Medicine"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_gravity="center"/>-->
+        <!--</LinearLayout>-->
 
-        <LinearLayout
-            android:id="@+id/frg_profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:layout_marginLeft="32dp">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/frg_order"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="32dp"-->
+            <!--android:layout_marginRight="32dp">-->
+            <!--<ImageView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/ic_order"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Order"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_gravity="center"/>-->
+        <!--</LinearLayout>-->
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_profile" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Profile"
-                android:textColor="@color/white"
-                android:layout_gravity="center"/>
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/frg_profile"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="32dp">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/ic_profile" />-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Profile"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_gravity="center"/>-->
+        <!--</LinearLayout>-->
 
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
 </LinearLayout>

@@ -10,8 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.apoteksibalian.R;
 
-public class MedicineFragemnt extends Fragment {
-
+public class MedicineFragment extends Fragment {
 
     View v;
 
