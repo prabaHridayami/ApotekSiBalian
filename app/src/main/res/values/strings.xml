@@ -3,10 +3,14 @@
     <string name="medicine">Medicine</string>
     <string name="order">Order</string>
     <string name="profile">Profile</string>
-    <string name="pending">Pending</string>
-    <string name="process">Process</string>
-    <string name="sent">Sent</string>
-    <string name="fail">Failed</string>
+    <string name="belum_lunas">Belum Lunas</string>
+    <string name="lunas">Lunas</string>
+    <string name="diproses">Diproses</string>
+    <string name="menunggu">Menunggu Ojek</string>
+    <string name="dikirim">Dikirim</string>
+    <string name="sampai">Obat sampai</string>
+    <string name="selesai">Selesai</string>
+    <string name="ditolak">Pesanan Ditolak</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

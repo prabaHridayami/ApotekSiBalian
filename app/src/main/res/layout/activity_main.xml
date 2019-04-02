@@ -13,6 +13,7 @@
         android:layout_height="?actionBarSize"
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
+        android:layout_alignParentTop="true"
         android:elevation="10dp">
 
         <TextView
@@ -24,6 +25,15 @@
             android:textColor="@color/white"
             android:layout_marginLeft="15dp"/>
 
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_search_black_24dp"
+            />
+
     </LinearLayout>
 
     <FrameLayout
@@ -31,8 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight = "1"
-        android:background="?android:attr/windowBackground"
-        android:layout_below="@+id/header">
+        android:background="?android:attr/windowBackground">
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView

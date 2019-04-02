@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 
 import com.example.apoteksibalian.R;
 
-public class SentPage extends Fragment {
+public class LunasPage extends Fragment {
     View v;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.sent_page,container,false);
+        v = inflater.inflate(R.layout.process_page,container,false);
         return v;
     }
 }

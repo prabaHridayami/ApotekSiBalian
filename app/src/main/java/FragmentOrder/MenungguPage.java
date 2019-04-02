@@ -10,12 +10,13 @@ import android.view.ViewGroup;
 
 import com.example.apoteksibalian.R;
 
-public class ProcessPage extends Fragment {
+public class MenungguPage extends Fragment {
+
     View v;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.process_page,container,false);
+        v = inflater.inflate(R.layout.pending_page,container,false);
         return v;
     }
 }

@@ -8,6 +8,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="250dp"
@@ -63,32 +65,87 @@
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background_shape"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:layout_marginBottom="32dp"
                     android:layout_marginTop="32dp"
+                    android:elevation="5dp"
                     android:layout_centerHorizontal="true">
 
-                    <TextView
-                        android:id="@+id/tv_address"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:textColor="@color/black"
-                        android:text="Address :"/>
-                    <TextView
-                        android:id="@+id/tv_contact"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:text="Address"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:text="Contact"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:text="Email"/>
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:textColor="@color/black"
-                        android:text="Contact :"/>
-                    <TextView
-                        android:id="@+id/tv_email"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:text=":"/>
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:textColor="@color/black"
-                        android:text="Email :"/>
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:text="Unknown"/>
+                        <TextView
+                            android:id="@+id/tv_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:text="Unknown"/>
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:text="Unknown"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <Button

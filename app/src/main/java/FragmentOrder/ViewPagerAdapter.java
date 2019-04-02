@@ -4,9 +4,6 @@ import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
-
-import com.example.apoteksibalian.R;
 
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -22,13 +19,21 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int i) {
         if (i == 0){
-            return new PendingPage();
+            return new BelumLunasPage();
         }else if (i == 1){
-            return new ProcessPage();
+            return new LunasPage();
         }else if (i == 2){
-            return new SentPage();
+            return new DiprosesPage();
+        }else if (i == 3){
+            return new MenungguPage();
+        }else if (i == 4){
+            return new DikirimPage();
+        }else if (i == 5){
+            return new SampaiPage();
+        }else if (i == 6){
+            return new SelesaiPage();
         }else {
-            return new FailedPage();
+            return new DitolakPage();
         }
     }
 
@@ -38,6 +43,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 8;
     }
 }

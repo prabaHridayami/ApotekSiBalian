@@ -42,6 +42,21 @@
                 android:layout_margin="8dp"
                 android:background="@color/black"/>
 
+            <Button
+                android:id="@+id/btn_add_medimage"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@id/card_profil"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_image"
+                android:textColor="@color/black"
+                android:text="Pilih Gambar"
+                android:textSize="12sp"
+                android:elevation="5dp"
+                android:textAllCaps="false"/>
+
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="match_parent"
@@ -50,7 +65,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="8dp"
                 android:textColor="@color/black"
-                android:text="Name"/>
+                android:text="Nama Obat"/>
 
             <EditText
                 android:id="@+id/et_name"
@@ -59,7 +74,9 @@
                 android:layout_margin="5dp"
                 android:textColor="@color/black"
                 android:background="@drawable/et_shape"
-                android:hint="Input medicine name here ..."/>
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:hint="Masukan nama obat ..."/>
 
             <TextView
                 android:id="@+id/tv_price"
@@ -69,7 +86,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="8dp"
                 android:textColor="@color/black"
-                android:text="Price"/>
+                android:text="Harga"/>
 
             <EditText
                 android:id="@+id/et_price"
@@ -78,7 +95,9 @@
                 android:layout_margin="5dp"
                 android:textColor="@color/black"
                 android:background="@drawable/et_shape"
-                android:hint="Input price here ..."/>
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:hint="Masukan harga ..."/>
 
             <TextView
                 android:id="@+id/tv_type"
@@ -88,7 +107,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="8dp"
                 android:textColor="@color/black"
-                android:text="Type"/>
+                android:text="Tipe Obat"/>
 
             <Spinner
                 android:id="@+id/s_type"
@@ -96,6 +115,7 @@
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
                 android:textColor="@color/black"
+                android:elevation="5dp"
                 android:background="@drawable/spinner" />
 
             <TextView
@@ -106,15 +126,37 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="8dp"
                 android:textColor="@color/black"
-                android:text="Service"/>
+                android:text="Kategori Obat"/>
 
             <Spinner
-                android:id="@+id/s_service"
+                android:id="@+id/s_kategory"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
                 android:textColor="@color/black"
+                android:elevation="5dp"
                 android:background="@drawable/spinner" />
+
+            <TextView
+                android:id="@+id/tv_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black"
+                android:text="Stok"/>
+
+            <EditText
+                android:id="@+id/et_stock"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:background="@drawable/et_shape"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:hint="Masukan stok obat ..."/>
 
             <TextView
                 android:id="@+id/tv_desc"
@@ -124,7 +166,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="8dp"
                 android:textColor="@color/black"
-                android:text="Description"/>
+                android:text="Deskripsi"/>
 
             <EditText
                 android:id="@+id/etc"
@@ -139,8 +181,9 @@
                 android:inputType="textMultiLine"
                 android:lines="4"
                 android:gravity="left|top"
-                android:padding="8dp"
-                android:hint="Input description here..."/>
+                android:padding="10dp"
+                android:elevation="5dp"
+                android:hint="Masukan deskripsi..."/>
 
             <Button
                 android:id="@+id/btn_add_med"
@@ -154,6 +197,7 @@
                 android:textColor="@color/white"
                 android:text="Add Medicine"
                 android:textSize="12sp"
+                android:elevation="5dp"
                 android:textAllCaps="false"/>
         </LinearLayout>
 

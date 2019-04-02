@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.apoteksibalian.R;
 
-public class FailedPage extends Fragment {
+public class DitolakPage extends Fragment {
     View v;
     @Nullable
     @Override

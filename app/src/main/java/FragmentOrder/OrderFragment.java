@@ -24,10 +24,14 @@ public class OrderFragment extends Fragment {
     private TabLayout tabLayout;
 
     private int[] navLabel = {
-            R.string.pending,
-            R.string.process,
-            R.string.sent,
-            R.string.fail
+            R.string.belum_lunas,
+            R.string.lunas,
+            R.string.diproses,
+            R.string.menunggu,
+            R.string.dikirim,
+            R.string.sampai,
+            R.string.selesai,
+            R.string.ditolak
 
     };
 
