@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@drawable/tv_line_bottom">
+            <TextView
+                android:id="@+id/med_desc"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:text="ID: 10293894093"
+                android:textColor="@color/darkGreen"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                />
+
+
+            <TextView
+                android:id="@+id/med_price"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:gravity="right|top"
+                android:text="Pending"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="Jumlah Item : 3"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="Layanan : Jemput"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="Total Pembayaran : Rp.100.000,00"
+                android:textColor="@color/black"
+                />
+
+            <LinearLayout
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn_reject"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="16dp"
+                    android:layout_below="@id/card_profil"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_reject"
+                    android:textColor="@color/white"
+                    android:text="Reject"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/btn_accept"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="16dp"
+                    android:layout_below="@id/card_profil"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_edit"
+                    android:textColor="@color/white"
+                    android:text="Accept"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

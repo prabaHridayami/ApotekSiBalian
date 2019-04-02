@@ -1,5 +1,6 @@
 package FragmentOrder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -32,16 +33,14 @@ public class OrderFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.medicine_fragment, container, false);
+        v = inflater.inflate(R.layout.order_fragment, container, false);
 
         viewPager = v.findViewById(R.id.viewPager_id);
-        tabLayout = v.findViewById(R.id.tabLayout_id);
-
         ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager(), getContext());
         viewPager.setAdapter(adapter);
-
+        tabLayout = v.findViewById(R.id.tabLayout_id);
         tabLayout.setupWithViewPager(viewPager);
-        createTabTitle(tabLayout);
+        createTabIcon(tabLayout);
 
         return v;
     }
@@ -54,14 +53,15 @@ public class OrderFragment extends Fragment {
 
     }
 
-    private void createTabTitle(TabLayout tabLayout) {
+    private void createTabIcon(TabLayout tabLayout) {
         for (int i = 0; i < tabLayout.getTabCount(); i++){
-            LinearLayout tab = (LinearLayout) LayoutInflater.from(getContext()).inflate(R.layout.custom_tab_order, null);
+            LinearLayout tab = (LinearLayout) LayoutInflater.from(getContext()).inflate(R.layout.costum_tablayout, null);
 
-            TextView tab_label = (TextView) tab.findViewById(R.id.nav_label_oder);
+            TextView tab_label = (TextView) tab.findViewById(R.id.nav_label);
 
             tab_label.setText(getResources().getString(navLabel[i]));
-            tab_label.setTextColor(getResources().getColor(R.color.colorPrimary));
+            tab_label.setText(navLabel[i]);
+            tab_label.setTextColor(getResources().getColor(R.color.white));
 
             tabLayout.getTabAt(i).setCustomView(tab);
 //            tabLayout.getTabAt(i).getIcon().setColorFilter(Color.parseColor("#000"), PorterDuff.Mode.SRC_IN);

@@ -16,7 +16,7 @@ public class ProfileFragement extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.medicine_fragment, container, false);
+        v = inflater.inflate(R.layout.profile_fragement, container, false);
 
         return v;
     }
