@@ -13,7 +13,7 @@
         <activity android:name=".MedicineActivity.EditMedicineActivity" />
         <activity
             android:name=".MedicineActivity.AddMedicineActivity"
-            android:theme="@style/Widget.AppCompat.ActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar." />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

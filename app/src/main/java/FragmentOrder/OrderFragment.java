@@ -8,6 +8,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +55,7 @@ public class OrderFragment extends Fragment {
     }
 
     private void createTabIcon(TabLayout tabLayout) {
+        Log.d("countTAB", "createTabIcon: "+tabLayout.getTabCount());
         for (int i = 0; i < tabLayout.getTabCount(); i++){
             LinearLayout tab = (LinearLayout) LayoutInflater.from(getContext()).inflate(R.layout.costum_tablayout, null);
 
