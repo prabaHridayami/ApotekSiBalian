@@ -19,6 +19,7 @@ import android.widget.LinearLayout;
 import FragementProfile.ProfileFragement;
 import FragmentMedicine.MedicineFragment;
 import FragmentOrder.OrderFragment;
+import FragmentReport.ReportFragment;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -55,6 +56,10 @@ public class MainActivity extends AppCompatActivity{
                             break;
                         case R.id.navigation_order:
                             selectFragment = new OrderFragment();
+                            btn_search.setVisibility(View.GONE);
+                            break;
+                        case R.id.navigation_report:
+                            selectFragment = new ReportFragment();
                             btn_search.setVisibility(View.GONE);
                             break;
                         case R.id.navigation_profile:

@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Balian Drug Store</string>
-    <string name="medicine">Medicine</string>
-    <string name="order">Order</string>
-    <string name="profile">Profile</string>
+    <string name="medicine">Obat</string>
+    <string name="order">Pesanan</string>
+    <string name="profile">Akun</string>
+    <string name="report">Laporan</string>
     <string name="belum_lunas">Belum Lunas</string>
     <string name="lunas">Lunas</string>
     <string name="diproses">Diproses</string>
