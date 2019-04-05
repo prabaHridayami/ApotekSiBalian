@@ -1,6 +1,8 @@
 package com.example.apoteksibalian;
 
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.BottomNavigationView;
 
 import android.support.v4.app.Fragment;
@@ -12,6 +14,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import FragementProfile.ProfileFragement;
 import FragmentMedicine.MedicineFragment;
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity{
 
     BottomNavigationView navigationView;
     ImageView btn_search;
+    LinearLayout header;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,7 @@ public class MainActivity extends AppCompatActivity{
 
         navigationView = findViewById(R.id.navigation);
         btn_search = findViewById(R.id.btn_search);
+        header = findViewById(R.id.header);
         navigationView.setOnNavigationItemSelectedListener(navListener);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_id,new MedicineFragment()).commit();
@@ -38,6 +43,7 @@ public class MainActivity extends AppCompatActivity{
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                     Fragment selectFragment = null;
