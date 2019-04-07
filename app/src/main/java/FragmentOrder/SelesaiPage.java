@@ -16,7 +16,7 @@ public class SelesaiPage extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.pending_page,container,false);
+        v = inflater.inflate(R.layout.selesai_page,container,false);
         return v;
     }
 }

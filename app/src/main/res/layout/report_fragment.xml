@@ -1,62 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <android.support.v7.widget.CardView
+        android:id="@+id/data_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Filter"
+                android:elevation="5dp"
+                android:layout_marginBottom="8dp"
+                ></TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_filter"
+                android:elevation="5dp">
+            </Spinner>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
         android:id="@+id/data_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_penjualan"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/et_shape_petugas"
+                android:elevation="5dp"
+                android:layout_margin="10dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tv_jenis_obat"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/et_shape_petugas"
+                android:elevation="5dp"
+                android:layout_margin="10dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tv_total_pembayaran"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/et_shape_petugas"
+                android:elevation="5dp"
+                android:layout_margin="10dp"
+                ></TextView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <com.anychart.AnyChartView
+        android:id="@+id/any_chart_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/data_report"
+        android:layout_margin="16dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/progress_bar">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/report_card"
-            android:elevation="30dp"
-            android:layout_margin="10dp"
-            ></TextView>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/report_card"
-            android:elevation="30dp"
-            android:layout_margin="10dp"
-            ></TextView>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/report_card"
-            android:elevation="30dp"
-            android:layout_margin="10dp"
-            ></TextView>
-
-    </LinearLayout>
-
-        <com.anychart.AnyChartView
-            android:id="@+id/any_chart_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/data_report"
-            />
-
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
-
-
-
-
-
-</RelativeLayout>
+</LinearLayout>

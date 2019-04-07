@@ -9,9 +9,10 @@
     <string name="diproses">Diproses</string>
     <string name="menunggu">Menunggu Ojek</string>
     <string name="dikirim">Dikirim</string>
-    <string name="sampai">Obat sampai</string>
+    <string name="sampai">Pesanan selesai</string>
     <string name="selesai">Selesai</string>
     <string name="ditolak">Pesanan Ditolak</string>
+    <string name="detail_order">Detail Pesanan</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

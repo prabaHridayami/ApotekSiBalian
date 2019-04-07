@@ -15,7 +15,7 @@ public class DiprosesPage extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.sent_page,container,false);
+        v = inflater.inflate(R.layout.diproses_page,container,false);
         return v;
     }
 }

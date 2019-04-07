@@ -25,12 +25,10 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         }else if (i == 2){
             return new DiprosesPage();
         }else if (i == 3){
-            return new MenungguPage();
-        }else if (i == 4){
             return new DikirimPage();
-        }else if (i == 5){
+        }else if (i == 4){
             return new SampaiPage();
-        }else if (i == 6){
+        }else if (i == 5){
             return new SelesaiPage();
         }else {
             return new DitolakPage();
@@ -43,6 +41,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 8;
+        return 7;
     }
 }

@@ -15,7 +15,7 @@ public class DitolakPage extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.failed_page,container,false);
+        v = inflater.inflate(R.layout.ditolak_page,container,false);
         return v;
     }
 }

@@ -15,7 +15,7 @@ public class LunasPage extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.process_page,container,false);
+        v = inflater.inflate(R.layout.lunas_page,container,false);
         return v;
     }
 }

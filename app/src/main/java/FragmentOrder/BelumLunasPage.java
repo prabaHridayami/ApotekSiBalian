@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +19,7 @@ public class BelumLunasPage extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.pending_page,container,false);
+        v = inflater.inflate(R.layout.belum_lunas_page,container,false);
 
         Button btn_detail = v.findViewById(R.id.btn_detail);
 
@@ -29,7 +28,6 @@ public class BelumLunasPage extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), DetailOrderActivity.class);
                 startActivity(intent);
-                getActivity().finish();
             }
         });
         return v;

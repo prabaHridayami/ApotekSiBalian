@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <android.support.v7.widget.CardView
             android:id="@+id/actionbar1"
@@ -20,14 +20,29 @@
             android:backgroundTint="@color/colorPrimary"
             tools:ignore="MissingConstraints">
 
-            <ImageView
-                android:id="@+id/back_detailorder"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginHorizontal="10dp"
-                android:background="@drawable/ic_arrow"
-                android:elevation="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/back_detailorder"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/ic_arrow"
+                    android:elevation="1dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:text="@string/detail_order"/>
+
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
     </LinearLayout>
@@ -41,6 +56,44 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/resep_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellowlight"
+
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:padding="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_receipt"
+                    android:backgroundTint="@color/bluelight" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Resep Dokter"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_receipt"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/btn_detail"
+                    android:textColor="@color/white"
+                    android:text="Receipt"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:elevation="5dp"/>
+
+            </LinearLayout>
 
 
         <android.support.v7.widget.CardView
@@ -274,6 +327,7 @@
             app:cardBackgroundColor="@color/white"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="20dp"
             android:elevation="5dp">
 
@@ -400,6 +454,39 @@
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Petugas"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/et_petugas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="8dp"
+                        android:background="@drawable/et_shape_petugas"
+                        android:hint="Masukan nama disini..."
+                        android:elevation="5dp"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
         <LinearLayout
             android:id="@+id/button"
             android:layout_width="match_parent"

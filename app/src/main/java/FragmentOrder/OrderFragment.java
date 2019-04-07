@@ -27,7 +27,6 @@ public class OrderFragment extends Fragment {
             R.string.belum_lunas,
             R.string.lunas,
             R.string.diproses,
-            R.string.menunggu,
             R.string.dikirim,
             R.string.sampai,
             R.string.selesai,
